@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body> 
+    <div class="main_conatner">
+      <div class="cont_img">
+        <img src="bg-card-front.png" alt="" class="first">
+        <div class="circle"></div>
+        <h2>0000 0000 0000 0000</h2>
+        <h5>Jane Appleseed</h5>
+        <h1>00/00</h1>
+      </div>
+      <img style="position: absolute;left: 19%;top: 52%;" src="bg-card-back.png" alt="" class="second">
+    </div>
+    <div id="one" class="contaner">
+      <h3>Cardholder Name</h3>
+      <input type="email" name="" id="" placeholder="e.g. Jane Appleseed">
+      <h3  style="margin-top: 20px;">Card Number</h3>
+      <input type="email" name="" id="" placeholder="e.g. 1234 5678 9123 0000">
+      <h3  style="margin-top: 20px;">Exp. Date (MM/YY)</h3>
+      <input style="width: 11%;" type="text" placeholder="MM">
+      <input style="width: 11%;" type="text" placeholder="YY">
+      <h3 style="margin-left: 30%;width: 29%;margin-top: -12%;">CVC</h3>
+      <input style="width: 27%;margin-left: 30%;" type="text" placeholder="e.g. 123">
+      <button id="but_1">Confirm</button>
+    </div>
+    <div id="two" class="hid_contaner">
+      <img src="icon-complete.svg" alt="">
+      <h1>Thank you!</h1>
+      <p>We've added your card details</p>
+      <button id="but_2">Continue</button>
+    </div>
+    <script>
+      let but_1 = document.getElementById('but_1')
+      let but_2 = document.getElementById('but_2')
+      let one = document.getElementById('one')
+      let two = document.getElementById('two')
+      
+      but_1.onclick = function(){
+        two.style.display = "inline"
+        one.style.display = "none"
+      }
+      but_2.onclick = function(){
+        two.style.display = "none"
+        one.style.display = "inline"
+      }
+    </script>
+  </body>
+</html>

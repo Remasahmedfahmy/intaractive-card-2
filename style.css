@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+.main_conatner{
+    background: url(bg-main-desktop.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.cont_img img{
+    position: absolute;
+    left: 6%;
+    top: 12%;
+}
+.cont_img .circle{
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    left: 9%;
+    top: 14%;
+}
+.cont_img h2{
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    left: 9%;
+    top: 31%;
+    letter-spacing: 5px;
+    font-family: "Space Grotesk", sans-serif;
+}
+.cont_img h5{
+    position: absolute;
+    left: 9%;
+    top: 40%;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+.cont_img h1{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    color: #fff;
+    font-size: 71%;
+}
+.contaner{
+    position: absolute;
+    top: 25%;
+    left: 53%;
+    width: 47%;
+}
+input{
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #9d9d9d;
+    width: 55%;
+    font-size: 15px;
+}
+h3{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+button{
+    margin-left: -57%;
+    width: 58%;
+    padding: 15px;
+    margin-top: 12%;
+    position: absolute;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    background: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.hid_contaner{
+    position: absolute;
+    top: 22%;
+    left: 61%;
+    display: none;
+}
+.hid_contaner img{
+    position: absolute;
+    left: 20%;
+}
+.hid_contaner h1{
+    position: absolute;
+    top: 125px;
+}
+.hid_contaner p{
+    margin-top: 77%;
+    margin-left: -10%;
+    width: 119%;
+}
+.hid_contaner button{
+    margin-left: -19%;
+    width: 113%;
+    padding: 15px;
+    margin-top: 12%;
+    position: absolute;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    background: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
